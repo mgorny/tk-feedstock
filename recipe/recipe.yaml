@@ -26,6 +26,8 @@ source:
 
 build:
   number: ${{ build }}
+  # TMP: build only the missing platforms
+  skip: not (build_platform != target_platform and win)
 
 outputs:
   - staging:
