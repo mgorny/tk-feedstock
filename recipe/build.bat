@@ -16,7 +16,7 @@ if "%build_platform%"=="win-arm64" (
 )
 
 if NOT "%target_platform%"=="%build_platform%" (
-  set "TCLSH_NATIVE=TCLSH_NATIVE=%BUILD_PREFIX%\Library\bin\tclsh86.exe"
+  set "TCLSH_NATIVE=TCLSH_NATIVE=%BUILD_PREFIX%\Library\bin\tclsh.exe"
 )
 
 rmdir /s /q "tcl%PKG_VERSION%\pkgs"
